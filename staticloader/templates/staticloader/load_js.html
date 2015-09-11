@@ -1,0 +1,5 @@
+{% load staticfiles %}
+
+{% for file_path in files %}
+    <script type="text/javascript" src="{% static file_path %}"></script>
+{% endfor %}
