@@ -7,13 +7,9 @@ Staticloader is a simple Django app which provides template tags for loading Jav
 Installation
 ------------
 
-1. Installation using pip:
+Install using pip:
 
     ``pip install git+git://github.com/izderic/django-staticloader.git``
-
-2. You can add this line to you requrements.txt:
-
-    ``-e git://github.com/izderic/django-staticloader.git#egg=django-staticloader``
 
 Quick start
 -----------
