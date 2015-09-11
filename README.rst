@@ -4,6 +4,17 @@ django-staticloader
 
 Staticloader is a simple Django app which provides template tags for loading JavaScript and CSS files into the template.
 
+Installation
+------------
+
+1. Installation using pip:
+
+    ``pip install git+git://github.com/izderic/django-staticloader.git``
+
+2. You can add this line to you requrements.txt:
+
+    ``-e git://github.com/izderic/django-staticloader.git#egg=django-staticloader``
+
 Quick start
 -----------
 
@@ -41,3 +52,5 @@ Quick start
 
         {% loadcss "style" "bootstrap" %}
         {% loadjs "jquery" "bootstrap" %}
+
+    
