@@ -11,11 +11,7 @@ def render_tag(template_name, file_paths):
     Renders the specified template with given context.
     """
     template_obj = get_template(template_name)
-    context = template.Context({
-        'files': file_paths
-    })
-
-    return template_obj.render(context)
+    return template_obj.render({'files': file_paths})
 
 
 @register.simple_tag
