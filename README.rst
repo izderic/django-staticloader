@@ -24,19 +24,19 @@ Quick start
 2. Define dictionaries ``JS_FILES`` and ``CSS_FILES`` in your Django settings file like this:
 
     .. code:: python
- 
+
         # settings.py
         # ============
 
         JS_FILES = {
-            'jquery': 'jquery-1.11.3.min.js',
-            'bootstrap': 'bootstrap-3.2.0-dist/js/bootstrap.min.js',
+            'myCustomScript': 'js/myCustomScript.js',
+            'exampleScript': 'js/exampleScript.js',
             ...
         }
 
         CSS_FILES = {
             'style': 'css/style.css',
-            'bootstrap': 'bootstrap-3.2.0-dist/css/bootstrap.min.css',
+            'otherStyle': 'css/otherStyle.css',
             ...
         }
 
@@ -46,7 +46,6 @@ Quick start
 
     .. code:: python
 
-        {% loadcss "style" "bootstrap" %}
-        {% loadjs "jquery" "bootstrap" %}
+        {% loadcss "style" "otherStyle" %}
+        {% loadjs "myCustomScript" "exampleScript" %}
 
-    

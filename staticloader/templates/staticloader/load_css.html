@@ -1,5 +1,1 @@
-{% load staticfiles %}
-
-{% for file_path in files %}
-    <link rel="stylesheet" href="{% static file_path %}">
-{% endfor %}
+{% load staticfiles %}{% for file_path in files %}{% if file_path %}<link rel="stylesheet" href="{% static file_path %}">{% endif %}{% endfor %}

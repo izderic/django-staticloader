@@ -1,5 +1,1 @@
-{% load staticfiles %}
-
-{% for file_path in files %}
-    <script type="text/javascript" src="{% static file_path %}"></script>
-{% endfor %}
+{% load staticfiles %}{% for file_path in files %}{% if file_path %}<script type="text/javascript" src="{% static file_path %}"></script>{% endif %}{% endfor %}
